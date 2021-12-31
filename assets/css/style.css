@@ -27,6 +27,11 @@ aside{
     float: left;
     border-right: 2px dashed black
 }
+.self-portrait{
+    float: right;
+    width:100px;
+    height:100px;
+}
 
 section{
     padding: 30px;
@@ -58,10 +63,13 @@ h2{
 .side-header{
     display:block;
     border-right: 2px dashed black;
+    font-size: 40px;
+    color: springgreen;
 }
 
 figure{
     border: 5px solid black;
+    border-radius: 5px;
 }
 footer{
     padding: 10px;
