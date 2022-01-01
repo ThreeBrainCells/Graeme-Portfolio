@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Graeme Portfolio</title>
-  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -14,7 +14,8 @@
     <h1 class="name">
       Graeme's Portfolio
     </h1>
-    <nav>
+    <img class="self-portrait" src="assets/images/Graeme Self-Portrait.png" alt="Graeme At His Desk">
+    <nav class="navigation">
       <a href="#about-me">About Me</a>
       <a href="#work">Work</a>
       <a href="#contact-me">Contact Me</a>
@@ -27,40 +28,49 @@
       <aside>
         <h2 class="side-header">About Me</h2>
       </aside>
-      <h2 class="tablet-header">About Me</h2>
+      <div><h2 class="tablet-header">About Me</h2>
       <p>Hello everyone! My name is Graeme Montrose. I am learning software editing and languages in hopes of opening new career paths!<br>
       <br>While i was born in Pennsylvania, I grew up in Denver, so I consider myself a 'Denverite.'<br>
       <br>For hobbies, I like writing short stories, painting models, and playing video games.<br>
       <br>I want to be a writer, for movies, TV, or (with the skills i'm learning) video games!<br>
       <br>I live in the Denver Area (more specific details upon request).<br>
       <br>I'm learning coding under the belief i can use it to get my creative writing a new platform to reach its target audience.</p>
-      <img class="self-portrait" href="assets/images/WIN_20211205_19_35_17_Pro.jpg" alt="Graeme At His Desk">
-    </section>
+      
+      </div>
+          </section>
 
     <section id="work">
       <aside>
         <h2 class="side-header">My Work</h2>
       </aside>
-      <h2 class="tablet-header"> My Work</h2>
-      <figure class="project1">
-        <figcaption></figcaption>
-      </figure>
+      <div class=work>      
+        <h2 class="tablet-header"> My Work</h2>
+        <figure class="project" id="project1">
+          <img src="assets/images/Graeme-Website-Screenshot.png" alt="Graeme's first Refactor">
+        <figcaption>My first Class Project</figcaption>
+       </figure>
 
-      <figure class="project">
-        <figcaption></figcaption>
-      </figure>
+        <figure class="project">
+         <img src="assets/images/abstract-1-1174741.jpg" alt="Abstract">
+        <figcaption>A Placeholder</figcaption>
+       </figure>
 
-      <figure class="project">
-        <figcaption></figcaption>
-      </figure>
+        <figure class="project">
+          <img src="assets/images/tubes-1252172.jpg" alt="Tubes">
+        <figcaption>A placeholder</figcaption>
+        </figure>
 
-      <figure class="project">
-        <figcaption></figcaption>
-      </figure>
+        <figure class="project">
+          <img src="assets/images/Eldar.jpg" alt="Warhammer Miniatures">
+        <figcaption>A geeky placeholder</figcaption>
+        </figure>
 
-      <figure class="project">
-        <figcaption></figcaption>
-      </figure>
+        <figure class="project">
+          <img src="assets/images/Necrons.jpg" alt="More Warhammer Miniatures">
+        <figcaption>A geeky placeholder</figcaption>
+        </figure>
+    </div>
+
 
     </section>
 
@@ -69,12 +79,14 @@
         <h2 class="side-header">Contact Me</h2>
       </aside>
       <h2 class="tablet-header">Contact Me</h2>
-      <nav class="contact">
-        <a href="mailto: teentrose@gmail.com">My email: teentrose@gmail.com</a>
-        <a>My phone: 303-565-6220</a>
-        <a href="https://github.com/ThreeBrainCells">MY GitHub</a>
-        <a href="www.linkedin.com/in/graeme-montrose-4a7698174">My LinkedIn</a>
-      </nav>
+      <div>
+        <nav class="contact">
+          <a href="mailto: teentrose@gmail.com">My email: teentrose@gmail.com</a>
+          <a href="tel:3035656220">My phone: 303-565-6220</a>
+          <a href="https://github.com/ThreeBrainCells">MY GitHub</a>
+          <a href="https://www.linkedin.com/in/graeme-montrose-4a7698174">My LinkedIn</a>
+        </nav>
+      </div>
 
     </section>
 
@@ -82,8 +94,11 @@
       <aside>
         <h2 class="side-header">Resume</h2>
       </aside>
-      <h2 class="tablet-header">Resume</h2>
-      <p>Here's where i'll put my Resume.</p>
+      <div>
+        <h2 class="tablet-header">Resume</h2>
+        <p>Here's where i'll put my Resume.</p>
+      </div>
+      
     </section>
 
   </main>
