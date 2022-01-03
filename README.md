@@ -5,4 +5,4 @@ To my understanding my assignment was to create a framework for what will become
 
 This is the result:[my portfolio]()
 
-[What the website looks like] (assets\images\Graeme Portfolio Screenshot.png)
+![What the website looks like] (assets\images\Graeme Portfolio Screenshot.png)
