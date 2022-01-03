@@ -1,8 +1,9 @@
 *{
     font-family: 'Courier New', Courier, monospace;
     background-color: darkgrey;
+    box-sizing: border-box;
 }
-
+/* Header always visible, always able to help the user navigate the page */
 header{
     padding: 10px;
     position: fixed;
@@ -25,7 +26,7 @@ nav{
     text-align: right;
     display: flex;
 }
-
+/* The padding accounts for the size of the header */
 main{
     padding: 360px 0;
 }
@@ -48,6 +49,11 @@ aside{
     float: right;
     width:250px;
     height:200px;
+    filter: grayscale(50%);
+}
+/* hovering over my face makes detail appear. */
+.self-portrait:hover{
+    filter: none;
 }
 
 section{
@@ -66,14 +72,70 @@ a {
     margin-left: 25px;
     color: #ffffff;
     text-decoration: none;
+    font-style: oblique;
 }
+/* these pseudo-classes change the navigation links when clicked on */
+a:hover{
+    color: pink;
+}
+
+a:active{
+    color: black;
+}
+
+a:focus{
+    color: blueviolet;
+}
+
 .work{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+figure{
+    flex: 1 0 20%;
+    border: 5px solid black;
+    border-radius: 5px;
+    max-width: 720px;
+}
+/* The picture changes to grayscale when the mouse hovers over it, signifying how it's a link */
+#project1 img:hover{
+    filter: grayscale(75%);
+}
+
+figcaption{
+    font-size: 16px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+figcaption a{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+figure img{
+    width: 700px;
+    height: 400px;
+    object-fit: scale-down;
+}
+
+#project1{
+    flex: 1 0 100%;
+    max-width: 1120px;
+}
+/* this overrides the figure img selector for the first image, making it bigger */
+#project1 img{
+    width: 1100px;
+    height: 500px;
 }
 
 .contact{
     text-align: center;
+}
+
+.contact a{
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 h2{
@@ -85,10 +147,7 @@ h2{
     display:none;
 }
 
-figure{
-    border: 5px solid black;
-    border-radius: 5px;
-}
+
 footer{
     padding: 10px;
     text-align: center;
@@ -100,10 +159,14 @@ footer{
     left: 0px;
     right: 0px;
 }
-
+/* This should take effect for tablet screens */
 @media screen and (max-width: 768px) {
     main{
         padding: 400px 0;
+    }
+
+    img{
+        max-width: 768px;
     }
 
     section,
@@ -115,5 +178,19 @@ footer{
     }
     aside{
         display:none;
+    }
+    div{
+        flex-direction: column;
+    }
+    figure{
+        flex: 0 1 100%;
+        min-width: none;
+        min-height: none;
+    }
+}
+/* This should ensure compatibility for mobile phones */
+@media screen and (max-width: 367px){
+    img{
+        max-width: 200px;
     }
 }
