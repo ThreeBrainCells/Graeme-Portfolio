@@ -43,6 +43,7 @@ aside{
         display:block;
         font-size: 40px;
         color: springgreen;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
     
 .self-portrait{
@@ -70,7 +71,7 @@ div{
 a {
     display: inline-block;
     margin-left: 25px;
-    color: #ffffff;
+    color: #5313c9;
     text-decoration: none;
     font-style: oblique;
 }
@@ -100,7 +101,7 @@ figure{
     max-width: 720px;
 }
 /* The picture changes to grayscale when the mouse hovers over it, signifying how it's a link */
-#project1 img:hover{
+.project-img img:hover{
     filter: grayscale(75%);
 }
 
